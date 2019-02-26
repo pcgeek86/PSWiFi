@@ -11,6 +11,6 @@ function Disconnect-WiFi {
             Write-Verbose -Message 'Adding interface parameter'
         }
     }
-    Invoke-Expression -Command $Command
+    $null = Invoke-Expression -Command $Command
     Write-Verbose -Message 'Disconnected WiFi'
 }
