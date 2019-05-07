@@ -3,6 +3,8 @@ function Find-WifiNetwork {
     param ()
 
     Disconnect-WiFi
+    Start-Sleep -Seconds 1
+    
     $Command = 'netsh wlan show networks'
     $Result = Invoke-Expression -Command $Command
 
