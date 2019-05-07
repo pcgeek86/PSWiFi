@@ -24,6 +24,7 @@
         'Connect-WiFiProfile'
         'Disconnect-WiFi'
         'Find-WifiNetwork'
+        'Remove-WiFiProfile'
         )
 
     # Which PowerShell aliases are exported from your module? (eg. gco)
