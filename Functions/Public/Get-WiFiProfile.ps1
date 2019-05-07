@@ -10,6 +10,8 @@ function Get-WiFiProfile {
     $ProfileList | ForEach-Object -Process {
         $matches = $null
         $null = $PSItem -match ': (?<ProfileName>.*)$'
-        $matches.ProfileName
+        if ($matches) {
+            $matches.ProfileName
+        }
     }
 }
